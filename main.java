@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class main {
 
 //needed for code to run
@@ -21,12 +23,12 @@ public class main {
 
 //        camelCase for variable names
 
-        int age = 21;
+//        int age = 21;
         int year = 2025;
         int quantity = 1;
 
         double price = 19.99;
-        double gpa = 3.5;
+//        double gpa = 3.5;
         double temperature = 23.5;
 
         char grade = 'A';
@@ -37,9 +39,29 @@ public class main {
         boolean forSale = false;
         boolean isOnline = true;
 
-        String name = "Butt";
+//        String name = "Butt";
+        String food = "pizza";
+        String email = "email@email.com";
 
-        System.out.println(name);
+        System.out.println("Your choice is a " + grade + " " + year);
+        System.out.println(" ");
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your name:");
+        String name = scanner.nextLine();
+
+        System.out.println("Enter you age: ");
+        int age = scanner.nextInt();
+
+        System.out.println("what is your gpa: ");
+        double gpa = scanner.nextDouble();
+
+        System.out.println("Your name is: " + name);
+        System.out.println("You are " + age + " years old.");
+        System.out.println("Your gpa is: " + gpa);
+        scanner.close();
     }
 }
 
