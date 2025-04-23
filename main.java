@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class main {
@@ -43,25 +44,47 @@ public class main {
         String food = "pizza";
         String email = "email@email.com";
 
-        System.out.println("Your choice is a " + grade + " " + year);
-        System.out.println(" ");
+//        System.out.println("Your choice is a " + grade + " " + year);
+//        System.out.println(" ");
+//
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Enter your name:");
+//        String name = scanner.nextLine();
+//
+//        System.out.println("Enter you age: ");
+//        int age = scanner.nextInt();
+//
+//        System.out.println("what is your gpa: ");
+//        double gpa = scanner.nextDouble();
+//
+//        System.out.println("Your name is: " + name);
+//        System.out.println("You are " + age + " years old.");
+//        System.out.println("Your gpa is: " + gpa);
+//        scanner.close();
 
+//        create scanner object
+
+
+        double width = 0;
+        double height = 0;
+        double area = 0;
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your name:");
-        String name = scanner.nextLine();
+        System.out.println("Enter the width: ");
+        width = scanner.nextDouble();
 
-        System.out.println("Enter you age: ");
-        int age = scanner.nextInt();
+        System.out.println("Enter the height: ");
+        height = scanner.nextDouble();
 
-        System.out.println("what is your gpa: ");
-        double gpa = scanner.nextDouble();
+        area = width * height;
 
-        System.out.println("Your name is: " + name);
-        System.out.println("You are " + age + " years old.");
-        System.out.println("Your gpa is: " + gpa);
+        System.out.println("The area is: " + area);
+
         scanner.close();
+
     }
 }
 
